@@ -1,0 +1,26 @@
+double a, b; 
+string 01 = "+"'s;
+string 02 = "-"s;
+string 03 = "*"s;
+string 04 = "/"s;
+string op;
+cin >> a >> op >> b;
+if (op == 01) {
+cout << "= "s << (a+b) << endl;
+}
+else if (op == 02) {
+cout << "= "s << (a-b) << endl;
+}
+else if (op == 03) {
+cout << "= "s << (a * b) << endl;
+}
+else if (op == 04) {
+if (b == 0) {
+cout << "Division by zero" << endl;
+else {
+cout << "= "s << (a/b) << endl;
+}
+}
+else {
+cout << "Unknown operation: " << op << endl;
+}
